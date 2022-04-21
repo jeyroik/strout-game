@@ -1,0 +1,19 @@
+{
+    "name": "strout-game",
+    "extensions": [
+        {
+            "class": "stroug\\components\\extensions\\ExtensionPlayerHealth",
+            "interface": "stroug\\interfaces\\extensions\\IExtensionPlayerHealth",
+            "subject": "stroug.contract.player",
+            "methods": ["getHealth", "incHealth", "decHealth", "isDead", "isAlive"],
+            "install_on": "initialization"
+        },
+        {
+            "class": "stroug\\components\\extensions\\ExtensionPlayerExp",
+            "interface": "stroug\\interfaces\\extensions\\IExtensionPlayerExp",
+            "subject": "stroug.contract.player",
+            "methods": ["getExp", "incExp", "decExp"],
+            "install_on": "initialization"
+        }
+    ]
+}
